@@ -5,8 +5,781 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </head>
 <body>
+    <header>
+        <div class="header-inner">
+            <a href="#top" class="logo">
+                <img src="./assets/img/logo.svg" alt="シャッタードクターロゴ">
+            </a>
+            <button class="tab-show menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="right">
+                <ul class="menu">
+                    <li>
+                        <a href="#strong-point">
+                            強み
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#product">
+                            商品説明
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#achievement">
+                            実績事例
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#voice">
+                            お客様の声
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#company">
+                            会社概要
+                        </a>
+                    </li>
+                </ul>
+                <div class="kaketsuke">
+                    <h6>365日24時間受付け</h6>
+                    <p>関東圏内すぐに駆けつけます</p>
+                </div>
+                <a href="tel:0120-000-000" class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+                        <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
+                    </svg>
+                    <div class="button-right">
+                        <small>フリーダイヤル</small>
+                        <p>0120-000-000</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="fixed-area">
+        <a href="tel:0120-000-000" class="tel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+                <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
+            </svg>
+            <p>無料電話で<br>相談する</p>
+        </a>
+
+        <a href="#" class="line">
+            <img src="./assets/img/line.svg" alt="LINE">
+            <p>LINE<br>で簡単お申し込み</p>
+        </a>
+    </section>
+
+    <main>
+        <section class="fv" id="top">
+            <div class="fv-inner">
+                <div class="left">
+                    <img src="./assets/img/fv-txt.svg" alt="シャッターの緊急事態を速攻解決！" class="catch">
+                    <div class="left-bottom">
+                        <div class="tokucho1">
+                            <img src="./assets/img/fv-bottom1.svg" alt="保証期間3年対応">
+                            <img src="./assets/img/fv-bottom2.svg" alt="関東最安5千円〜">
+                            <img src="./assets/img/fv-bottom3.svg" alt="年中無休24時間">
+                        </div>
+                        <img src="./assets/img/kaketsuke.svg" alt="最短1時間で駆けつけます" class="tokucho2">
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./assets/img/fv-inner.webp" alt="シャッターの緊急事態を速攻解決！">
+                </div>
+            </div>
+        </section>
+
+        <section class="donyu section">
+            <div class="section-inner">
+                <div class="cta">
+                    <div class="top">
+                        <div class="left">
+                            <img class="ribbon" src="./assets/img/ribbon.svg" alt="365日24時間受付中">
+
+                        </div>
+                        <div class="center">
+                            <h2>
+                                <span>まずはお気軽にご相談ください</span>
+                            </h2>
+                            <div class="labels">
+                                <p>24時間受付</p>
+                                <p>出張費無料</p>
+                                <p>お見積り無料</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img/sodan-man.svg" alt="お気軽にご相談ください" class="man">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <h2>
+                            即日対応可能！<br>現金払い・クレジットカード決済対応！
+                        </h2>
+                        <p class="desc">最短1時間以内に駆けつけます！</p>
+                        <div class="button-wrapper">
+                            <a href="tel:0120-000-000" class="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+                                    <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
+                                </svg>
+                                <div class="button-right">
+                                    <small>フリーダイヤル</small>
+                                    <p>0120-000-000</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="button line">
+                                <img src="./assets/img/line.svg" alt="">
+                                <div class="button-right">
+                                    <p>LINEで簡単お申し込み</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="covid">
+                    <h2>新型コロナウィルス感染防止対策</h2>
+                    <div class="bottom">
+                        <div class="left">
+                            <img src="./assets/img/cov1.svg" alt="マスク">
+                            <img src="./assets/img/cov2.svg" alt="手洗い"  class="center">
+                            <img src="./assets/img/cov3.svg" alt="消毒">
+                            <img src="./assets/img/cov4.svg" alt="換気" class="img4">
+                            <img src="./assets/img/cov5.svg" alt="検温" class="img5">
+                        </div>
+                        <p class="right">
+                            出勤した際の検温実施をおこない感染予防対策をおこなっております。迅速、確実、丁寧なサービスをお客様にご提供するよう尽力しておりますので、何卒ご理解、ご協力のほどお願い申し上げます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="strong section" id="strong-point">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>シャッタードクターの強み</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h3 class="ttl ttl1">
+                            <span>メーカー品質</span>を<br>どこよりも安く
+                        </h3>
+                        <div class="card-bottom">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/strong1.webp" alt="">
+                            </div>
+                            <p>
+                                シャッタードクターでは、大手シャッターメーカーで経験を積んだ作業員が多数在中！どんなシャッターも対応可能です！
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <h3 class="ttl ttl2">
+                            365日<span class="big">24</span>時間対応
+                        </h3>
+                        <div class="card-bottom">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/strong2.webp" alt="">
+                            </div>
+                            <p>
+                                急なシャッターの故障も365日24時間対応の為、すぐに駆けつけ急なトラブルも最速で対応致します！
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="ttl ttl3">
+                            <h6>
+                                修理<br>価格
+                            </h6>
+                            <div class="right">
+                                <span class="big-2">5,000</span>円〜
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/strong3.webp" alt="業界最安値に挑戦！">
+                            </div>
+                            <p>
+                                シャッター修繕の御見積高くありませんか？業界最安値に挑戦！料金、技術力、品質に自信があります！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-inner hotei-inner">
+                <div class="hotei">
+                    <div class="img-wrapper">
+                        <img src="./assets/img/strong4.webp" alt="法定点検も受付けております">
+                    </div>
+                    <div class="right">
+                        <h2>
+                            <span>法定点検も受付けております</span>
+                        </h2>
+                        <p>防火シャッターは2016年から建築基準法により定期的な点検が義務付けられています。また、防火シャッターは人々の命を守る非常に大事な防火設備となっており、火災が発生した際、防火シャッターが閉まることで炎、煙を遮り、二次災害を防ぎ屋内の人々の避難経路を確保する役割もあります。<br>シャッタードクターでは、防火シャッター、ドア保守点検資格保有の作業員も多数在中しておりますのでお気軽にご相談下さい。</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="achievement section">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>3つの安心・安全の実績</span>
+                </h2>
+            </div>
+
+            <div class="section-inner">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="ttl">
+                            <div class="circle">
+                                <h3>01</h3>
+                            </div>
+                            <h2>大手メーカー実績</h2>
+                        </div>
+                        <p>
+                            私たちは常にお客様の立場に立ち安心、安全に使えるシャッターを提供致します！<br>シャッタードクターでは大手メーカーで実績を積んだ作業員が多数在中。どんなトラブルにも早急に対応可能です。また、製品も安心のメーカー品質。メーカー品質をメーカーよりも安くがもっとうです！電気工事も可能！シャッターに関する知識、技術力にも特化しております！
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="ttl">
+                            <div class="circle">
+                                <h3>02</h3>
+                            </div>
+                            <h2>経験豊富な実績</h2>
+                        </div>
+                        <p>
+                            信頼の施工実績は10000件以上！高度な技術と確かな経験を持ったプロフェッショナルとして多くのお客様から評判を頂いております。現場調査の上お客様のご要望に合った最適なシャッター修理やシャッターリニューアルを提案致します。<br>活かせる部品は活かし、施工も可能なため納得いくまでご相談下さい！
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="ttl">
+                            <div class="circle">
+                                <h3>03</h3>
+                            </div>
+                            <h2>調査無料点検</h2>
+                        </div>
+                        <p>
+                            現場調査の際無料でシャッターの点検を行なっております！<br>シャッター落下での死亡事故は過去に何件もあります。年数が経っている場合いつシャッターが落下してもおかしくありません。<br>地震や自然災害でも外観からでは目視出来ない部分が劣化している可能性は大いにあります。<br>お客様がシャッターを安全、安心して使う為にはメンテナンスや点検が必須になります。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <div class="top">
+                        <div class="left">
+                            <img class="ribbon" src="./assets/img/ribbon.svg" alt="365日24時間受付中">
+
+                        </div>
+                        <div class="center">
+                            <h2>
+                                <span>まずはお気軽にご相談ください</span>
+                            </h2>
+                            <div class="labels">
+                                <p>24時間受付</p>
+                                <p>出張費無料</p>
+                                <p>お見積り無料</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img/sodan-man.svg" alt="お気軽にご相談ください" class="man">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <h2>
+                            即日対応可能！<br>現金払い・クレジットカード決済対応！
+                        </h2>
+                        <p class="desc">最短1時間以内に駆けつけます！</p>
+                        <div class="button-wrapper">
+                            <a href="tel:0120-000-000" class="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+                                    <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
+                                </svg>
+                                <div class="button-right">
+                                    <small>フリーダイヤル</small>
+                                    <p>0120-000-000</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="button line">
+                                <img src="./assets/img/line.svg" alt="">
+                                <div class="button-right">
+                                    <p>LINEで簡単お申し込み</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product section" id="product">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>シャッター商品説明</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="recommend-wrapper">
+                    <div class="recommend">
+                        <h2>こんな方におすすめ！</h2>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommend">
+                        <h2>こんな方におすすめ！</h2>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommend">
+                        <h2>こんな方におすすめ！</h2>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label">メーカー</p>
+                                    <img src="./assets/img/sample.webp" alt="">
+                                </div>
+                                <div class="category">
+                                    <p class="label">処分費込み</p>
+                                    <p class="label">工事費込み</p>
+                                </div>
+                                <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="flow section">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>工事までの流れ</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="flow-inner">
+                    <div class="card">
+                        <img src="./assets/img/flow1.webp" alt="">
+                        <h4>お問い合わせ</h4>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/flow2.webp" alt="">
+                        <h4>現場調査</h4>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/flow3.webp" alt="">
+                        <h4>見積り</h4>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/flow4.webp" alt="">
+                        <h4>検討</h4>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/flow5.webp" alt="">
+                        <h4>作業</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievement2 section">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>修理・新設実績事例</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="case-wrapper">
+                    <div class="case">
+                        <div class="ttl">
+                            <img src="./assets/img/case1-ttl.svg" alt="" class="ribbon">
+                            <h3>こんな事例に対処しました</h3>
+                        </div>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label before">施行前</p>
+                                    <img src="./assets/img/case1-1.webp" alt="">
+                                </div>
+                            </div>
+                            <img src="./assets/img/before-after.svg" alt="">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label after">施行後</p>
+                                    <img src="./assets/img/case1-2.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="case">
+                        <div class="ttl">
+                            <img src="./assets/img/case2-ttl.svg" alt="" class="ribbon">
+                            <h3>こんな事例に対処しました</h3>
+                        </div>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label before">施行前</p>
+                                    <img src="./assets/img/case2-1.webp" alt="">
+                                </div>
+                            </div>
+                            <img src="./assets/img/before-after.svg" alt="">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label after">施行後</p>
+                                    <img src="./assets/img/case2-2.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="case">
+                        <div class="ttl">
+                            <img src="./assets/img/case3-ttl.svg" alt="" class="ribbon">
+                            <h3>こんな事例に対処しました</h3>
+                        </div>
+                        <div class="bottom">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label before">施行前</p>
+                                    <img src="./assets/img/case3-1.webp" alt="">
+                                </div>
+                            </div>
+                            <img src="./assets/img/before-after.svg" alt="">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <p class="label after">施行後</p>
+                                    <img src="./assets/img/case3-2.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="voice section" id="voice">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>お客様からの感謝の声</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="container">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./assets/img/voice1.webp" alt="">
+                                <div class="bottom">
+                                    <h3>R.O様</h3>
+                                    <p>工場のシャッターが急に動かなくなり資材の搬入ができなくなってしまいましたが、搬入のトラックが詰まっていたため無理を言って早急にに動く様にして欲しいと頼んだところあっという間に一時的に動く様になりました。技術力、判断力が高く感じその後の修理もすぐに対応してくれました。壊れた際は是非お願いしたいです。</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <img src="./assets/img/voice2.webp" alt="">
+                                <div class="bottom">
+                                    <h3>Y.F様</h3>
+                                    <p>シャッターが開かずお店がオープン出来ない状況の中シャッタードクターさんに依頼をしたところ早急に対応していただき無事時間通りに開店する事が出来ました！<br>職人さんも状況を丁寧に教えてくれて再発防止のアドバイスも頂き年数は経っていますが今でもトラブルなく使えています！</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <img src="./assets/img/voice3.webp" alt="">
+                                <div class="bottom">
+                                    <h3>H.K様</h3>
+                                    <p>朝出勤のためガレージの中の車を出す際シャッターが上がらず車が出せませんでした。<br>電話した際職人さんが一時的にシャッターを動かす方法を教えてくれました。<br>その後調査に来てくれ、修繕。対応もスムーズで安心してお願いする事ができました。</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <img src="./assets/img/voice4.webp" alt="">
+                                <div class="bottom">
+                                    <h3>Y.K様</h3>
+                                    <p>わかりやすい説明や確認をしてくれたので信頼出来ます。料金を不当に高く設定されないか正直不安でしたが、そんな事はなく大手メーカーよりもびっくりするほど安かったです。製品もメーカー品質。対応、作業もスムーズでとても助かりました。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="faq section">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>よくあるご質問</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="faq-wrapper">
+                    <div class="single">
+                        <div class="q">
+                            <h5>Q</h5>
+                            <h6>クレジットカードでお支払いできますか？</h6>
+                        </div>
+                        <div class="a">
+                            <h5>A</h5>
+                            <h6>作業終了後に、現金・クレジットカード・銀行振込でお支払いお願いいたします。</h6>
+                        </div>
+                    </div>
+
+                    <div class="single">
+                        <div class="q">
+                            <h5>Q</h5>
+                            <h6>電話してどれくらいで来てもらえますか？</h6>
+                        </div>
+                        <div class="a">
+                            <h5>A</h5>
+                            <h6>最短10分で現場に急行します。常に緊急対応の体制を整えていますのでご安心ください。</h6>
+                        </div>
+                    </div>
+
+                    <div class="single">
+                        <div class="q">
+                            <h5>Q</h5>
+                            <h6>法人・個人でも対応可能ですか？</h6>
+                        </div>
+                        <div class="a">
+                            <h5>A</h5>
+                            <h6>はい、個人宅や法人・店舗・工場など幅広く対応しております。</h6>
+                        </div>
+                    </div>
+
+                    <div class="single">
+                        <div class="q">
+                            <h5>Q</h5>
+                            <h6>シャッターの品質の良さ、金額はいくらになりますか？</h6>
+                        </div>
+                        <div class="a">
+                            <h5>A</h5>
+                            <h6>オーダーメイド作成なのでお見積りの際、ご提示させていただきます。</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="area section">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>対応エリア</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="area-wrapper">
+                    <div class="left">
+                        <img src="./assets/img/area.webp" alt="">
+                    </div>
+                    <div class="right">
+                        <h3>対応エリアは24時間即日対応！</h3>
+                        <p>
+                            施工対応エリアとして、シャッターの、販売/交換/設置/取り付け工事を行っております。「古くなったシャッターを交換してほしい」「台風でシャッターが壊れた」等、お困りの際はすぐにお電話ください。<br>対応エリア内でお電話を頂きましたらすぐにでも駆けつけ、お客様の悩みを解決致します。対応外のエリアの方でもお気軽にご連絡ください。ご相談、お問い合わせ、見積りは無料です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="company section" id="company">
+            <div class="ttl-wrapper">
+                <h2>
+                    <span>会社概要</span>
+                </h2>
+            </div>
+            <div class="section-inner">
+                <div class="company-wrapper">
+                    <table>
+                        <tr>
+                            <th>事業所名</th>
+                            <td>シーサイドグループ株式会社</td>
+                        </tr>
+
+                        <tr>
+                            <th>代表取締役</th>
+                            <td>池田 匠吾</td>
+                        </tr>
+
+                        <tr>
+                            <th>電話番号</th>
+                            <td>045-947-4229</td>
+                        </tr>
+
+                        <tr>
+                            <th>メールアドレス</th>
+                            <td>kyuto.rescue@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒222-0011 神奈川県横浜市港北区菊名1-11-3ドゥエル甲斐1F店舗</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="section-inner">
+                <div class="cta">
+                    <div class="top">
+                        <div class="left">
+                            <img class="ribbon" src="./assets/img/ribbon.svg" alt="365日24時間受付中">
+
+                        </div>
+                        <div class="center">
+                            <h2>
+                                <span>まずはお気軽にご相談ください</span>
+                            </h2>
+                            <div class="labels">
+                                <p>24時間受付</p>
+                                <p>出張費無料</p>
+                                <p>お見積り無料</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img/sodan-man.svg" alt="お気軽にご相談ください" class="man">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <h2>
+                            即日対応可能！<br>現金払い・クレジットカード決済対応！
+                        </h2>
+                        <p class="desc">最短1時間以内に駆けつけます！</p>
+                        <div class="button-wrapper">
+                            <a href="tel:0120-000-000" class="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+                                    <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
+                                </svg>
+                                <div class="button-right">
+                                    <small>フリーダイヤル</small>
+                                    <p>0120-000-000</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="button line">
+                                <img src="./assets/img/line.svg" alt="">
+                                <div class="button-right">
+                                    <p>LINEで簡単お申し込み</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright(C)2022 SHUTTER DOCTOR CORPS All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

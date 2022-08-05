@@ -1,14 +1,20 @@
 jQuery(function($){
 
-    $( function() {
-      
+  $(function(){
+    $('.menu-button').click(function () {
+      $(this).toggleClass('add-active');
+      $('.right').toggleClass('add-active');
+    });
+  });
 
+
+    $( function() {
       // スムーススクロール(絶対パス対応)
       $(function () {
         $(function(){
         $('a[href*="#"]').click(function () {
 
-          var buffer = 178; //ヘッダーの高さ等
+          var buffer = 100; //ヘッダーの高さ等
           if (window.matchMedia('(max-width: 1024px)').matches) {
             var buffer = 0;
           } ;
@@ -24,5 +30,21 @@ jQuery(function($){
 
       });
 
+    });
+
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween:40,
+
+      // ページネーションが必要なら追加
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      // ナビボタンが必要なら追加
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
     });
   });
