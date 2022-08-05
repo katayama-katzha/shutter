@@ -73,15 +73,16 @@
 
     <section class="fixed-area">
         <a href="tel:0120-000-000" class="tel">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
+            <svg class="sp-hide" xmlns="http://www.w3.org/2000/svg" width="24.467" height="34.138" viewBox="0 0 24.467 34.138">
                 <path id="ifn0609" d="M26.907,263.32a4.287,4.287,0,0,0-1.887-.455l0-.005-.036,0a3.858,3.858,0,0,0-.647.051l-.129.032a7.238,7.238,0,0,0-2.267.671c-5.571,2.816-6.4,12.4-1.845,21.4s12.757,14.014,18.328,11.2a7.162,7.162,0,0,0,1.627-1.161,3.846,3.846,0,0,0,.378-.317,4.15,4.15,0,0,0,1.195-2.308l-8.2-8.574a4.154,4.154,0,0,0-2.364,1.086,4.413,4.413,0,0,0-1.268,3.374,28.424,28.424,0,0,1-6.607-13.042,4.421,4.421,0,0,0,3.489.995,4.154,4.154,0,0,0,2.276-1.26Z" transform="translate(-17.158 -262.859)" fill="#fff"/>
             </svg>
+            <img src="./assets/img/tel-sp.svg" alt="" class="sp-show">
             <p>無料電話で<br>相談する</p>
         </a>
 
         <a href="#" class="line">
             <img src="./assets/img/line.svg" alt="LINE">
-            <p>LINE<br>で簡単お申し込み</p>
+            <p>LINE<br class="sp-hide">で<br class="sp-show">簡単お申し込み</p>
         </a>
     </section>
 
@@ -155,7 +156,11 @@
                 </div>
 
                 <div class="covid">
-                    <h2>新型コロナウィルス感染防止対策</h2>
+                    <h2>
+                        <span>
+                            新型コロナウィルス感染防止対策
+                        </span>
+                    </h2>
                     <div class="bottom">
                         <div class="left">
                             <img src="./assets/img/cov1.svg" alt="マスク">
@@ -182,7 +187,7 @@
                 <div class="card-wrapper">
                     <div class="card">
                         <h3 class="ttl ttl1">
-                            <span>メーカー品質</span>を<br>どこよりも安く
+                            <span>メーカー品質</span>を<br class="tab-hide">どこよりも安く
                         </h3>
                         <div class="card-bottom">
                             <div class="img-wrapper">
@@ -449,34 +454,39 @@
             <div class="section-inner">
                 <div class="flow-inner">
                     <div class="card">
-                        <img src="./assets/img/flow1.webp" alt="">
+                        <img src="./assets/img/flow1.webp" alt="" class="tab-hide">
                         <h4>お問い合わせ</h4>
+                        <img src="./assets/img/flow1-sp.webp" alt="" class="tab-show">
                     </div>
 
                     <div class="card">
-                        <img src="./assets/img/flow2.webp" alt="">
+                        <img src="./assets/img/flow2.webp" alt="" class="tab-hide">
                         <h4>現場調査</h4>
+                        <img src="./assets/img/flow2-sp.webp" alt="" class="tab-show">
                     </div>
 
                     <div class="card">
-                        <img src="./assets/img/flow3.webp" alt="">
+                        <img src="./assets/img/flow3.webp" alt="" class="tab-hide">
                         <h4>見積り</h4>
+                        <img src="./assets/img/flow3-sp.webp" alt="" class="tab-show">
                     </div>
 
                     <div class="card">
-                        <img src="./assets/img/flow4.webp" alt="">
+                        <img src="./assets/img/flow4.webp" alt="" class="tab-hide">
                         <h4>検討</h4>
+                        <img src="./assets/img/flow4-sp.webp" alt="" class="tab-show">
                     </div>
 
                     <div class="card">
-                        <img src="./assets/img/flow5.webp" alt="">
+                        <img src="./assets/img/flow5.webp" alt="" class="tab-hide">
                         <h4>作業</h4>
+                        <img src="./assets/img/flow5-sp.webp" alt="" class="tab-show">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="achievement2 section">
+        <section class="achievement2 section" id="achievement">
             <div class="ttl-wrapper">
                 <h2>
                     <span>修理・新設実績事例</span>

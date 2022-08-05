@@ -5,6 +5,8 @@ jQuery(function($){
       $(this).toggleClass('add-active');
       $('.right').toggleClass('add-active');
     });
+
+
   });
 
 
@@ -16,7 +18,7 @@ jQuery(function($){
 
           var buffer = 100; //ヘッダーの高さ等
           if (window.matchMedia('(max-width: 1024px)').matches) {
-            var buffer = 0;
+            var buffer = 60;
           } ;
           var speed = 400;
           var href= $(this).attr("href");
@@ -32,8 +34,16 @@ jQuery(function($){
 
     });
 
+    $(function(){
+
+      $('.right a').click(function () {
+        $('.menu-button').removeClass('add-active');
+        $('.right').removeClass('add-active');
+      });
+    });
+
     const swiper = new Swiper(".swiper", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween:40,
 
       // ページネーションが必要なら追加
@@ -45,6 +55,20 @@ jQuery(function($){
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        // 768px以上の場合
+        768: {
+          slidesPerView: 1,
+        },
+        // 980px以上の場合
+        980: {
+          slidesPerView: 2,
+        },
+        // 1200px以上の場合
+        1100: {
+          slidesPerView: 3,
+        }
       }
     });
   });
