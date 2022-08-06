@@ -511,6 +511,10 @@ main {
   .fv .right img {
     height: auto;
     width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fv .right img {
     margin-bottom: 50px;
   }
 }
@@ -627,6 +631,11 @@ main {
 }
 .cta .top .center {
   padding-top: 50px;
+}
+@media (min-width: 1130px) {
+  .cta .top .center {
+    margin-left: 50px;
+  }
 }
 @media (max-width: 767px) {
   .cta .top .center {
@@ -877,6 +886,9 @@ main {
   background-color: #fff;
   color: #21c329;
 }
+.cta .bottom .button-wrapper .line p {
+  font-size: 24px;
+}
 @media (max-width: 767px) {
   .cta .bottom .button-wrapper .line p {
     font-size: 18px;
@@ -1079,7 +1091,7 @@ main {
 @media (max-width: 767px) {
   .strong .card-wrapper {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 }
 .strong .card-wrapper .card {
@@ -1301,13 +1313,28 @@ main {
 .strong .hotei-inner {
   padding-bottom: 72px;
 }
+@media (max-width: 767px) {
+  .strong .hotei-inner {
+    padding-bottom: 40px;
+  }
+}
 
 .achievement {
   padding-bottom: 80px;
 }
+@media (max-width: 767px) {
+  .achievement {
+    padding-bottom: 40px;
+  }
+}
 .achievement .section-inner {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .achievement .section-inner {
+    padding-top: 40px;
+  }
 }
 .achievement .section-inner .card-wrapper {
   display: flex;
@@ -1389,7 +1416,7 @@ main {
 }
 @media (max-width: 767px) {
   .achievement .section-inner .card-wrapper .card .ttl h2 {
-    padding-top: 30px;
+    padding-top: 35px;
     font-size: 18px;
   }
 }
@@ -1416,12 +1443,13 @@ main {
   .achievement .section-inner .cta::after {
     content: "";
     position: absolute;
-    top: -154px;
-    right: 30px;
+    top: -148px;
+    right: -10px;
     width: 190px;
     height: 154px;
     background-image: url(../img/sodan-man.svg);
     object-fit: contain;
+    transform: scale(0.9);
   }
 }
 
@@ -1436,6 +1464,11 @@ main {
 .product .section-inner {
   padding-top: 60px;
   padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .product .section-inner {
+    padding-top: 24px;
+  }
 }
 .product .recommend-wrapper {
   max-width: 1100px;
@@ -1520,12 +1553,12 @@ main {
   background-color: #e00d21;
   color: white;
   font-size: 20px;
-  padding: 10px 36px;
+  padding: 3px 36px;
 }
 @media (max-width: 767px) {
   .product .recommend-wrapper .recommend .bottom .card .img-wrapper .label {
     font-size: 10px;
-    padding: 5px 10px;
+    padding: 1px 20px;
   }
 }
 .product .recommend-wrapper .recommend .bottom .card .category {
@@ -1659,6 +1692,12 @@ main {
   padding-top: 64px;
   padding-bottom: 80px;
 }
+@media (max-width: 767px) {
+  .achievement2 .section-inner {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
 .achievement2 .section-inner .case-wrapper {
   max-width: 1100px;
   width: 100%;
@@ -1751,6 +1790,12 @@ main {
   font-family: "Hiragino Sans", "Noto Sans JP";
   padding: 14px 28px;
 }
+@media (max-width: 767px) {
+  .achievement2 .section-inner .case-wrapper .case .bottom .card .label {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
 .achievement2 .section-inner .case-wrapper .case .bottom .card .before {
   background-color: #e00d21;
 }
@@ -1777,6 +1822,11 @@ main {
   max-width: 1100px;
   margin: auto;
   padding-top: 60px;
+}
+@media (max-width: 767px) {
+  .voice .swiper {
+    padding-top: 24px;
+  }
 }
 .voice .swiper .swiper-slide {
   border: 2px solid #194494;
@@ -1851,6 +1901,12 @@ main {
 .faq h2 span::after {
   width: 180%;
   left: -40%;
+}
+@media (max-width: 767px) {
+  .faq h2 span::after {
+    width: 320px;
+    left: calc(50% - 180px);
+  }
 }
 @media (max-width: 1129px) {
   .faq {
@@ -1948,6 +2004,7 @@ main {
   .faq .section-inner .faq-wrapper .single .q h6 {
     width: calc(100% - 56px);
     font-size: 14px;
+    margin-left: 15px;
   }
 }
 .faq .section-inner .faq-wrapper .single .a {
@@ -1969,6 +2026,7 @@ main {
     width: calc(100% - 56px);
     font-size: 14px;
     line-height: 22px;
+    margin-left: 15px;
   }
 }
 
@@ -2032,6 +2090,13 @@ main {
     max-width: 500px;
   }
 }
+@media (max-width: 767px) {
+  .area .section-inner .area-wrapper .left {
+    max-width: 212px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
 .area .section-inner .area-wrapper .right {
   width: 63%;
   padding-left: 80px;
@@ -2074,8 +2139,12 @@ main {
 .company h2 span::after {
   width: 250%;
   left: -80%;
-  width: 320px;
-  left: calc(50% - 180px);
+}
+@media (max-width: 767px) {
+  .company h2 span::after {
+    width: 320px;
+    left: calc(50% - 170px);
+  }
 }
 @media (max-width: 1129px) {
   .company {
@@ -2089,6 +2158,11 @@ main {
 @media (max-width: 1129px) {
   .company .section-inner {
     padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .company .section-inner {
+    padding-bottom: 0;
   }
 }
 .company .section-inner .company-wrapper {
@@ -2106,13 +2180,18 @@ main {
 }
 @media (max-width: 767px) {
   .company .section-inner .company-wrapper {
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 0;
   }
 }
 .company .section-inner .company-wrapper table {
   width: 77%;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .company .section-inner .company-wrapper table {
+    width: 90%;
+  }
 }
 .company .section-inner .company-wrapper table th, .company .section-inner .company-wrapper table td {
   font-weight: 500;
@@ -2127,16 +2206,34 @@ main {
 }
 .company .section-inner .company-wrapper table th {
   color: #194494;
-  width: 110px;
+}
+@media (max-width: 767px) {
+  .company .section-inner .company-wrapper table th {
+    width: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .company .section-inner .company-wrapper table .syozai {
+    vertical-align: baseline;
+    padding-top: 24px;
+  }
 }
 .company .section-inner .company-wrapper table td {
   color: #252525;
 }
+@media (max-width: 767px) {
+  .company .section-inner .company-wrapper table td {
+    line-height: 24px;
+    width: calc(100% - 110px);
+  }
+}
 .company .section-inner .company-wrapper table tr {
   border-bottom: 1px solid #cdd6dd;
 }
-.company .section-inner .company-wrapper table tr:last-child {
-  border-bottom: none;
+@media (max-width: 1129px) {
+  .company .section-inner .company-wrapper table tr:last-child {
+    border-bottom: none;
+  }
 }
 
 .banner {
@@ -2166,12 +2263,13 @@ main {
   .banner .section-inner .cta::after {
     content: "";
     position: absolute;
-    top: -154px;
-    right: 30px;
+    top: -148px;
+    right: -10px;
     width: 190px;
     height: 154px;
     background-image: url(../img/sodan-man.svg);
     object-fit: contain;
+    transform: scale(0.9);
   }
 }
 

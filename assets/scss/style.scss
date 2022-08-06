@@ -514,6 +514,10 @@ main{
       img{
         height: auto;
         width: 80%;
+      }
+    }
+    @media screen and(max-width:500px) {
+      img{
         margin-bottom: 50px;
       }
     }
@@ -623,6 +627,9 @@ main{
     }
     .center{
       padding-top: 50px;
+      @include mq('tab-up'){
+        margin-left: 50px;
+      }
       @include mq('sp-down'){
         padding-top: 24px;
         width: calc(100% - 57.5px);
@@ -737,6 +744,7 @@ main{
       }
     }
     .right{
+
       @include mq('tab-down'){
         img{
           display: none;
@@ -853,6 +861,7 @@ main{
           color: #21c329;
         }
         p{
+          font-size: 24px;
           @include mq('sp-down'){
             font-size: 18px;
 
@@ -1032,7 +1041,7 @@ main{
     }
     @include mq('sp-down'){
       padding-top: 30px;
-      padding-bottom: 40px;
+      padding-bottom: 0px;
     }
     .card{
       width: calc(33.333% - 33.33px);
@@ -1144,6 +1153,7 @@ main{
       padding-left: 15px;
       padding-right: 15px;
     }
+
   }
   .hotei{
     width: 100%;
@@ -1222,14 +1232,23 @@ main{
   }
   .hotei-inner{
     padding-bottom: 72px;
+    @include mq('sp-down'){
+      padding-bottom: 40px;
+    }
   }
 }
 
 .achievement{
   padding-bottom: 80px;
+  @include mq('sp-down'){
+    padding-bottom: 40px;
+  }
   .section-inner{
     padding-top: 60px;
     padding-bottom: 60px;
+    @include mq('sp-down'){
+      padding-top: 40px;
+    }
     .card-wrapper{
       display: flex;
       justify-content: space-between;
@@ -1297,7 +1316,7 @@ main{
             padding-bottom: 15px;
             font-size: 26px;
             @include mq('sp-down'){
-              padding-top: 30px;
+              padding-top: 35px;
               font-size: 18px;
             }
           }
@@ -1321,12 +1340,13 @@ main{
           @include mq('tab-down'){
             content: "";
             position: absolute;
-            top: -154px;
-            right: 30px;
+            top: -148px;
+            right: -10px;
             width: 190px;
             height: 154px;
             background-image: url(../img/sodan-man.svg);
             object-fit: contain;
+            transform: scale(.9);
           }
         }
       }
@@ -1342,6 +1362,9 @@ main{
   .section-inner{
     padding-top: 60px;
     padding-bottom: 50px;
+    @include mq('sp-down'){
+      padding-top: 24px;
+    }
   }
   .recommend-wrapper{
     max-width: 1100px;
@@ -1409,10 +1432,10 @@ main{
               background-color: #e00d21;
               color: white;
               font-size: 20px;
-              padding:10px 36px;
+              padding:3px 36px;
               @include mq('sp-down'){
                 font-size: 10px;
-                padding: 5px 10px;
+                padding: 1px 20px;
               }
             }
           }
@@ -1533,6 +1556,10 @@ main{
   .section-inner{
     padding-top: 64px;
     padding-bottom: 80px;
+    @include mq('sp-down'){
+      padding-top: 24px;
+      padding-bottom: 40px;
+    }
     .case-wrapper{
       max-width: 1100px;
       width: 100%;
@@ -1608,6 +1635,10 @@ main{
               font-weight: bold;
               font-family: "Hiragino Sans","Noto Sans JP";
               padding: 14px 28px;
+              @include mq('sp-down'){
+                font-size: 14px;
+                padding: 10px 20px;
+              }
             }
             .before{
               background-color: #e00d21;
@@ -1640,6 +1671,9 @@ main{
     max-width: 1100px;
     margin: auto;
     padding-top: 60px;
+    @include mq('sp-down'){
+      padding-top: 24px;
+    }
     .swiper-slide{
       border: 2px solid #194494;
       img{
@@ -1712,6 +1746,10 @@ main{
       &::after{
         width: 180%;
         left: -40%;
+        @include mq('sp-down'){
+          width: 320px;
+          left: calc(50% - 180px);
+        }
       }
     }
   }
@@ -1790,6 +1828,7 @@ main{
             @include mq('sp-down'){
               width: calc(100% - 56px);
               font-size: 14px;
+              margin-left: 15px;
             }
           }
         }
@@ -1810,6 +1849,7 @@ main{
               width: calc(100% - 56px);
               font-size: 14px;
               line-height: 22px;
+              margin-left: 15px;
             }
           }
         }
@@ -1869,6 +1909,11 @@ main{
             max-width: 500px;
           }
         }
+        @include mq('sp-down'){
+          max-width: 212px;
+          margin: auto;
+          margin-bottom: 40px;
+        }
       }
       .right{
         width: 63%;
@@ -1909,8 +1954,10 @@ main{
       &::after{
         width: 250%;
         left: -80%;
-        width: 320px;
-        left: calc(50% - 180px);
+        @include mq('sp-down'){
+          width: 320px;
+          left: calc(50% - 170px);
+        }
       }
     }
   }
@@ -1924,6 +1971,9 @@ main{
     @include mq('tab-down'){
       padding-top: 0;
     }
+    @include mq('sp-down'){
+      padding-bottom: 0;
+    }
     .company-wrapper{
       background-color: #fff;
       padding-top: 30px;
@@ -1935,12 +1985,15 @@ main{
         max-width: 800px;
       }
       @include mq('sp-down'){
-        padding-top: 0;
+        padding-top: 10px;
         padding-bottom: 0;
       }
       table{
         width: 77%;
         margin: auto;
+        @include mq('sp-down'){
+          width: 90%;
+        }
         th,td{
           font-weight: 500;
           padding-bottom: 18px;
@@ -1952,15 +2005,29 @@ main{
         }
         th{
           color: #194494;
-          width: 110px;
+          @include mq('sp-down'){
+            width: 110px;
+          }
+        }
+        .syozai{
+          @include mq('sp-down'){
+            vertical-align: baseline;
+            padding-top: 24px;
+          }
         }
         td{
           color: #252525;
+          @include mq('sp-down'){
+            line-height: 24px;
+            width: calc(100% - 110px);
+          }
         }
         tr{
           border-bottom: 1px solid #cdd6dd;
           &:last-child{
-            border-bottom: none;
+            @include mq('tab-down'){
+              border-bottom: none;
+            }
           }
         }
       }
@@ -1988,12 +2055,13 @@ main{
         @include mq('tab-down'){
           content: "";
           position: absolute;
-          top: -154px;
-          right: 30px;
+          top: -148px;
+          right: -10px;
           width: 190px;
           height: 154px;
           background-image: url(../img/sodan-man.svg);
           object-fit: contain;
+          transform: scale(.9);
         }
       }
     }
